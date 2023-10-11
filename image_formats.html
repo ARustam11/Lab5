@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <title>Lab 5</title>
+    <link rel="stylesheet" href="styles.css"/>
+    <script>
+        function scaleUp() {
+            const images = document.querySelectorAll('.scalable');
+            images.forEach((image) => {
+                image.style.width = '500px';
+            });
+        }
+    </script>
+</head>
+<body class="page-body">
+
+    <header class="main-header">
+
+    </header>
+
+    <main class="content">
+        <!-- Displaying Different Formats -->
+        <h2>Displaying Different Formats</h2>
+        <figure>
+            <img src="Assets/goose_6000.jpg" alt="JPEG Image of Goose" width="300" height="200">
+            <figcaption>JPEG Image</figcaption>
+        </figure>
+        <figure>
+            <img src="Assets/boat.gif" alt="GIF Image of Boat" width="300" height="200">
+            <figcaption>GIF Image</figcaption>
+        </figure>
+        <figure>
+            <img src="Assets/wolf.svg" alt="SVG Image of Wolf" width="300" height="200">
+            <figcaption>SVG Graphic</figcaption>
+        </figure>
+        <figure>
+            <img src="Assets/dog.png" alt="PNG Image of Dog" width="300" height="200">
+            <figcaption>PNG Image</figcaption>
+        </figure>
+
+        <!-- Exploring Image Quality and Compression -->
+        <h2>Exploring Image Quality and Compression</h2>
+        <!-- JPEG Images -->
+        <img src="Assets/goose_6000.jpg" alt="Extra Quality Image of Goose" class="hoverable">
+        <img src="Assets/goose_640.jpg" alt="Low Quality Image of Goose" class="hoverable">
+        <img src="Assets/goose_1280.jpg" alt="Medium Quality Image of Goose" class="hoverable">
+        <img src="Assets/goose_1920.jpg" alt="Hight Quality Image of Goose" class="hoverable">
+
+        <!-- PNG Image -->
+
+            <img class="hoverable scalable" src="Assets/dog.png" alt="PNG Image of Dog">
+            <img class="hoverable scalable" src="Assets/dog.png24" alt="PNG Image of Dog">
+
+       
+        <!-- GIF Image -->
+        <figure>
+            <img class="hoverable bordered" src="Assets/boat.gif" alt="GIF Image of Boat" width="300" height="200">
+            <figcaption>GIF Image</figcaption>
+        </figure>
+        <!-- Scaling Images -->
+        <h2>Scaling Images</h2>
+        <!-- SVG Image -->
+        <figure>
+            <svg  class="scalable" alt="SVG Image of Circle">
+                <circle cx="50" cy="50" r="40"/>
+            </svg>    
+            <figcaption>SVG Image</figcaption>
+        </figure>
+
+        <!-- JPEG Image -->
+        <figure>
+            <img src="Assets/goose_6000.jpg" alt="JPEG Image of Goose" class="scalable">
+            <figcaption>JPEG Image</figcaption>
+        </figure>
+
+        
+        <button class="scaleButton" onclick="scaleUp()">Scale Up</button>
+    </main>
+    
+    <!-- Body Footer-->
+
+    <footer>
+        <p>&copy; 2023 Rustam Lab 5</p>
+    </footer>
+    
+</body>
+</html>

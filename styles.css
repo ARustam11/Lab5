@@ -1,0 +1,36 @@
+/* Border for Images */
+.bordered {
+    border: 5px solid black;
+}
+
+/* For SVG */
+.circle-svg {
+    fill: #51137a; 
+    stroke: #cfe42d;  
+}
+
+/* Hover */
+img:hover {
+    opacity: 0.8;
+}
+
+/* Scale */
+
+.scaleButton {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #510b9d;
+    color: #c4bdbd;
+    border: 2px solid #0000;
+}
+
+.scaleButton:hover {
+    background-color: #c19de9;
+}
+
+
+/* Image width */
+img {
+    width: 300px;
+    height: auto;
+}
