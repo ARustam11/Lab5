@@ -6,7 +6,7 @@
 /* For SVG */
 .circle-svg {
     fill: #51137a; 
-    stroke: #cfe42d;  
+    stroke: #f26100;  
 }
 
 /* Hover */
@@ -31,6 +31,6 @@ img:hover {
 
 /* Image width */
 img {
-    width: 300px;
+    width: 200px;
     height: auto;
 }
